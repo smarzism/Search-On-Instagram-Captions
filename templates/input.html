@@ -93,12 +93,10 @@
       {% endfor %}
     </ul>
     <!-- TEST: JavaScript to log 'results' to console -->
-    <script>
-      // Accessing 'results' variable passed from Flask to JavaScript
+    <!-- <script>
       let resultsData = {{ results | tojson | safe }};
-
       console.log('Results:', resultsData);
-    </script>
+    </script> -->
     {% endif %}
   </body>
 </html>

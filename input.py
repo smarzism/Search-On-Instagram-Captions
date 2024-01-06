@@ -47,26 +47,5 @@ def fetch_instagram_data(api,usernames, keyword):
         raise e
 
 
-
-# def fetch_instagram_data(api, usernames, keyword):
-    # search_results = []
-
-    # try:
-    #     for username in usernames:
-    #         user_info = api.username_info(username)
-    #         user_id = user_info['user']['pk']
-    #         posts = api.user_feed(user_id)
-
-    #         for post in posts.get('items', []):
-    #             caption_text = post.get('caption', {}).get('text', '')
-    #             url_code = post.get('code', '')
-    #             if keyword in caption_text:
-    #                 search_results.append({'username': username, 'post_id': url_code, 'caption': caption_text})
-
-    #     return search_results
-
-    # except ClientError as e:
-    #     raise e
-
 if __name__ == '__main__':
     app.run(debug=True)
